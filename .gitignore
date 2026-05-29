@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local secrets + data (never commit anything holding the Notion token)
+.env
+*.env.local
+admin.env
+audit.log
+audit.log.jsonl
+
+# OS
+.DS_Store
+Thumbs.db

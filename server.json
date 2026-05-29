@@ -1,0 +1,23 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server.schema.json",
+  "name": "io.github.adelaidasofia/notion-mcp",
+  "description": "Notion API (v1) access for Claude. Read pages/blocks/databases + draft+confirm-gated writes, 4-field per-call audit, SSRF-guarded HTTP.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "https://github.com/adelaidasofia/notion-mcp",
+  "repository": "https://github.com/adelaidasofia/notion-mcp",
+  "authors": [{ "name": "Adelaida Diaz-Roa" }],
+  "packages": [
+    {
+      "registryName": "pypi",
+      "name": "notion-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "python",
+      "runtimeArguments": []
+    }
+  ],
+  "runtime": "python",
+  "transport": "stdio",
+  "categories": ["productivity", "knowledge-base", "developer-tools"],
+  "keywords": ["notion", "docs", "database", "knowledge-base", "draft-confirm", "audit-log"]
+}
