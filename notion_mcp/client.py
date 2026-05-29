@@ -32,6 +32,15 @@ from mycelium_security import assert_public_ip, sanitize_or_raise
 from .audit import sanitize_error
 
 NOTION_API_BASE = "https://api.notion.com/v1"
+# Pinned to the stable "database" data model. Cross-checked against
+# developers.notion.com on 2026-05-29. The newer 2025-09-03 version replaces
+# databases with "data sources" and renames several fields — bumping
+# NOTION_VERSION would require migrating:
+#   * search / query filter value  "database" -> "data_source"
+#   * page archive field           {"archived": bool} -> {"in_trash": bool}
+#   * append-children position     {"after": id} -> {"position": {...}}
+# 2022-06-28 also matches the `query_database` tool-name contract the
+# ingest-notion skill calls, so it is the deliberate default.
 DEFAULT_NOTION_VERSION = "2022-06-28"
 DEFAULT_TIMEOUT = 30.0
 _USER_AGENT = "notion-mcp/0.1.0 (+https://github.com/adelaidasofia/notion-mcp)"
