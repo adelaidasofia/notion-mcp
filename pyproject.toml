@@ -47,7 +47,7 @@ Issues = "https://github.com/adelaidasofia/notion-mcp/issues"
 notion-mcp = "notion_mcp.server:run"
 
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=82.0.1", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
