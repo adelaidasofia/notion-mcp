@@ -29,7 +29,7 @@ classifiers = [
 dependencies = [
     "fastmcp>=3.2.4",
     "httpx>=0.27",
-    "mycelium-security @ git+https://github.com/adelaidasofia/mycelium-security.git@v0.1.0",
+    "mycelium-security @ git+https://github.com/adelaidasofia/mycelium-security.git@v0.1.1",
 ]
 
 [project.optional-dependencies]
